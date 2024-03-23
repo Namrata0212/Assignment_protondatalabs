@@ -1,0 +1,14 @@
+The changes that I have incorporated in the code are:
+
+#Backend
+1. Add the accept attribute to the file input element. The accept attribute is used to specify the types of files that the user can select in the file picker dialog. By setting the accept attribute to the acceptFileTypes array, the file picker dialog will only show files with the specified MIME types.
+The acceptFileTypes array includes the MIME types for CSV, text, PDF, and Word documents. This ensures that the user can only select files with these types, and not any other file type.
+2. The handleFileChange function has been updated to show a success toast message using toast.success('File uploaded successfully!') when a file is successfully selected. This provides feedback to the user that the file has been uploaded correctly.
+3. The resultOutput class has been added to the p element that displays the result, so that it can be styled using CSS.
+4. The model predicts from the training model.
+
+#Frontend
+1. used react library react-toastify to style and customize toast messages.
+2. defined the endpoint to accept file types - .txt, .pdf, .docx along with .csv files.
+3. used Mongodb to implement the storage and handling of input file types from user.
+
